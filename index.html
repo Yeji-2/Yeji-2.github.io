@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yeji Lee — Satellite Geophysics Laboratory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf8;
+    --ink:#1c1e22;
+    --muted:#6b7178;
+    --line:#e4e2dd;
+    --accent:#2f6f6a;
+    --name:#1c1e22;
+    --tagbg:#ffffff;
+    --status:#b06a2c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;line-height:1.65;font-size:16px;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px;margin:0 auto;padding:0 26px}
+
+  header{padding:72px 0 34px}
+  .name{font-family:"Newsreader",serif;font-weight:500;font-size:2rem;letter-spacing:-.01em;margin-bottom:4px;color:var(--name)}
+  .name .han{font-size:.62em;color:var(--muted);font-weight:400;margin-left:8px}
+  .role{font-size:.95rem;color:var(--muted)}
+  .role .place{color:var(--ink)}
+  .intro{font-size:.98rem;color:var(--ink);max-width:56ch;margin-top:20px}
+
+  .links{display:flex;flex-wrap:wrap;gap:18px;margin-top:24px}
+  .links a{font-family:"JetBrains Mono",monospace;font-size:.82rem;color:var(--accent);
+    text-decoration:none;border-bottom:1px solid transparent;transition:.15s}
+  .links a:hover{border-bottom-color:var(--accent)}
+
+  section{padding:34px 0;border-top:1px solid var(--line)}
+  .sec-title{font-family:"JetBrains Mono",monospace;font-size:.74rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:.86rem;color:var(--ink);padding:4px 11px;border:1px solid var(--line);
+    border-radius:5px;background:var(--tagbg)}
+  .tag.soon{color:var(--muted);border-style:dashed}
+
+  .pub{padding:16px 0;border-bottom:1px solid var(--line)}
+  .pub:last-child{border-bottom:none}
+  .pub .ttl{font-size:.98rem;font-weight:500;line-height:1.4;margin-bottom:4px}
+  .pub .ttl a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+  .pub .ttl a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+  .pub .meta{font-size:.85rem;color:var(--muted)}
+  .pub .venue{font-style:italic}
+  .pub .yr{font-family:"JetBrains Mono",monospace;color:var(--accent);margin-right:2px}
+  .pub .role2{color:var(--muted)}
+  .pub .status{color:var(--status)}
+  .pub a.doi{color:var(--accent);text-decoration:none}
+
+  footer{padding:36px 0 56px;border-top:1px solid var(--line);
+    font-family:"JetBrains Mono",monospace;font-size:.76rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="name">Yeji Lee <span class="han">이예지</span></div>
+    <div class="role">PhD candidate · <span class="place">Satellite Geophysics Laboratory, Sejong University</span></div>
+    <p class="intro">Interested in SAR time-series analysis and multi-source approaches.</p>
+
+    <div class="links">
+      <a href="https://orcid.org/0009-0002-4863-9420" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=1lLNyZYn8asC" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Yeji-Lee-37" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://www.linkedin.com/in/yeji-lee-374360419/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Yeji-2" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-title">Research interests</div>
+    <div class="tags">
+      <span class="tag">Synthetic Aperture Radar</span>
+      <span class="tag">InSAR coherence</span>
+      <span class="tag">Time-series analysis</span>
+      <span class="tag">Multi-source fusion</span>
+      <span class="tag">Change detection</span>
+      <span class="tag">Disaster detection</span>
+      <span class="tag">Polarimetry</span>
+      <span class="tag soon">Deep learning (in progress)</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-title">Publications</div>
+
+    <div class="pub">
+      <div class="ttl">SAR coherence time-series framework for earthquake-induced building damage detection</div>
+      <div class="meta"><span class="yr">2026</span> · <span class="venue">GIScience &amp; Remote Sensing</span> · <span class="status">in production</span> · <span class="role2">first author</span> · <a class="doi" href="https://doi.org/10.1080/15481603.2026.2698138" target="_blank" rel="noopener">doi</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="ttl"><a href="https://doi.org/10.3390/rs17111931" target="_blank" rel="noopener">On Flood Detection Using Dual-Polarimetric SAR Observation</a></div>
+      <div class="meta"><span class="yr">2025</span> · <span class="venue">Remote Sensing</span> 17(11), 1931 · <span class="role2">co-author</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="ttl"><a href="https://doi.org/10.3390/rs16111868" target="_blank" rel="noopener">Monitoring Long-Term Land Cover Change in Central Yakutia Using Sparse Time Series Landsat Data</a></div>
+      <div class="meta"><span class="yr">2024</span> · <span class="venue">Remote Sensing</span> 16(11), 1868 · <span class="role2">first author</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-title">Conference presentations</div>
+
+    <div class="pub">
+      <div class="ttl"><a href="https://doi.org/10.1109/ISAP62502.2024.10846458" target="_blank" rel="noopener">Damaged Building Detection Using Time Series Interferometric SAR Coherence</a></div>
+      <div class="meta"><span class="yr">2024</span> · <span class="venue">ISAP 2024 — International Symposium on Antennas and Propagation</span> · <span class="role2">first author</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="ttl"><a href="https://doi.org/10.1109/IGARSS52108.2023.10282420" target="_blank" rel="noopener">Monitoring Long-Term Change Trends in Boreal Permafrost Area Using Time Series Landsat</a></div>
+      <div class="meta"><span class="yr">2023</span> · <span class="venue">IGARSS 2023</span> · pp. 233–236 · <span class="role2">first author</span></div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Yeji Lee · ORCID 0009-0002-4863-9420
+  </footer>
+
+</div>
+</body>
+</html>
